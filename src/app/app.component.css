@@ -1,0 +1,42 @@
+/* Navbar background and shadow */
+.navbar {
+    background-color: #007bff; /* Bootstrap primary color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+    color: #15b3d7 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+    color: #e951d5 !important;
+    font-size: 1rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e4ce0f !important; /* Hover color: gold */
+}
+
+/* Active link styling */
+.navbar-nav .nav-link.active {
+    color: #ea5998 !important; /* Active link color: amber */
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+}

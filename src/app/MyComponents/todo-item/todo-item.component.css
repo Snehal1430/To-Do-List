@@ -1,0 +1,71 @@
+.container {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Description */
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Strike-through style for completed todos */
+.strike {
+  text-decoration: line-through;
+  color: #888 !important;
+}
+
+/* Info text (Sno and Active state) */
+small {
+  font-size: 0.9rem;
+  color: #666;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+/* Checkbox styling */
+.form-check-input {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  accent-color: #007bff;
+}
+
+.form-check-label {
+  margin-left: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Delete Button */
+button.btn-danger {
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button.btn-danger:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}

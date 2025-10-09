@@ -1,0 +1,13 @@
+<div class="container m-2 p-2 border">
+  <h5 [ngClass]="{ 'strike': !todo.active }">{{ todo.title }}</h5>
+  <p [ngClass]="{ 'strike': !todo.active }">{{ todo.desc }}</p>
+  <small>Sno: {{ todo.sno }} | Active: {{ todo.active }}</small><br>
+
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="todo{{i}}" 
+           (click)="onCheckboxClick()">
+    <label class="form-check-label" for="todo{{i}}">Toggle Done</label>
+  </div>
+
+  <button class="btn btn-sm m-2 btn-danger" (click)="onClick()">Delete</button>
+</div>
